@@ -50,3 +50,39 @@ ul {
   margin-left: 20px;
 }
 <link rel="stylesheet" href="style.css">
+body {
+  background-color: #0f172a;   /* dark blue-black */
+  color: #e5e7eb;              /* light gray text */
+}
+
+h1, h2, h3 {
+  color: #38bdf8;              /* accent blue */
+}
+
+p, li {
+  color: #e5e7eb;
+}
+
+a {
+  color: #22d3ee;
+}
+
+a:hover {
+  color: #67e8f9;
+}
+.goals {
+  display: flex;
+  gap: 20px;
+}
+
+.goal-box {
+  background-color: #020617;
+  padding: 15px;
+  border-radius: 8px;
+  flex: 1;
+}
+@media (max-width: 600px) {
+  .goals {
+    flex-direction: column;
+  }
+}
