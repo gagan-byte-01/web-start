@@ -117,3 +117,22 @@ a:hover {
     margin-bottom: 15px;
   }
 }
+.container {
+  max-width: 900px;
+  margin: auto;
+}
+h2 {
+  border-bottom: 1px solid #1f2933;
+  padding-bottom: 6px;
+}
+a {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 6px 12px;
+  border-radius: 6px;
+  background-color: rgba(56, 189, 248, 0.1);
+}
+
+a:hover {
+  background-color: rgba(56, 189, 248, 0.2);
+}
