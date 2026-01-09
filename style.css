@@ -1,138 +1,150 @@
-body {
-  background-color: #111;
-  color: white;
-  font-family: 'Inter', sans-serif;
-h1, h2, h3 {
-  font-weight: 600;
+
+/* ===== GLOBAL RESET ===== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-  padding: 20px;
+/* ===== BODY ===== */
+body {
+  background-color: #0f172a;
+  color: #e5e7eb;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
   line-height: 1.6;
 }
 
-h1, h2 {
-  color: #00ffcc;
+/* ===== CONTAINER ===== */
+.container {
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 30px;
+  background: #020617;
+  border-radius: 12px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.6);
 }
 
+/* ===== HEADINGS ===== */
+h1 {
+  font-size: 2.2rem;
+  margin-bottom: 10px;
+  color: #38bdf8;
+}
+
+h2 {
+  margin-top: 30px;
+  margin-bottom: 10px;
+  color: #7dd3fc;
+}
+
+h3 {
+  margin-top: 20px;
+  margin-bottom: 8px;
+  color: #bae6fd;
+}
+
+/* ===== TEXT ===== */
+p {
+  margin-bottom: 15px;
+  color: #cbd5f5;
+}
+
+/* ===== LISTS ===== */
+ul {
+  margin-left: 20px;
+  margin-bottom: 15px;
+}
+
+li {
+  margin-bottom: 6px;
+}
+
+/* ===== BUTTONS ===== */
+button {
+  background-color: #38bdf8;
+  color: #020617;
+  border: none;
+  padding: 10px 16px;
+  margin: 6px 4px 6px 0;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: transform 0.15s ease, background-color 0.15s ease;
+}
+
+button:hover {
+  background-color: #0ea5e9;
+  transform: translateY(-2px);
+}
+
+/* ===== LINKS ===== */
 a {
-  color: #4da6ff;
+  color: #38bdf8;
   text-decoration: none;
 }
 
 a:hover {
   text-decoration: underline;
 }
-.container {
-  max-width: 800px;
-  margin: auto;
+
+/* ===== SEPARATORS ===== */
+hr {
+  margin: 30px 0;
+  border: none;
+  border-top: 1px solid #1e293b;
 }
-body {
-  font-size: 16px;
+/* ===== SECTIONS ===== */
+section {
+  padding: 10px 0;
 }
 
-h1 {
-  font-size: 32px;
+section p:last-child {
+  margin-bottom: 0;
 }
-
-h2 {
-  font-size: 24px;
-}
-
-p, li {
-  font-size: 16px;
-}
-p {
-  margin-bottom: 15px;
-}
-
-h1, h2, h3 {
-  margin-top: 25px;
-  margin-bottom: 10px;
-}
-
-ul {
-  margin-left: 20px;
-}
-<link rel="stylesheet" href="style.css">
-body {
-  background-color: #0f172a;   /* dark blue-black */
-  color: #e5e7eb;              /* light gray text */
-}
-
-h1, h2, h3 {
-  color: #38bdf8;              /* accent blue */
-}
-
-p, li {
-  color: #e5e7eb;
-}
-
-a {
-  color: #22d3ee;
-}
-
-a:hover {
-  color: #67e8f9;
-}
-.goals {
-  display: flex;
-  gap: 20px;
-}
-
-.goal-box {
-  background-color: #020617;
-  padding: 15px;
-  border-radius: 8px;
-  flex: 1;
-}
-@media (max-width: 600px) {
-  .goals {
-    flex-direction: column;
-  }
-}
-@media (max-width: 600px) {
-  body {
-    font-size: 15px;
-  }
-
-  h1 {
-    font-size: 26px;
-  }
-
-  h2 {
-    font-size: 20px;
-  }
-}
-@media (max-width: 600px) {
-  .container {
-    padding: 10px;
-  }
-}
-@media (max-width: 600px) {
-  .container {
-    padding: 10px;
-  }
-
-  .goal-box {
-    margin-bottom: 15px;
-  }
-}
-.container {
-  max-width: 900px;
-  margin: auto;
-}
-h2 {
-  border-bottom: 1px solid #1f2933;
-  padding-bottom: 6px;
-}
-a {
-  display: inline-block;
+/* ===== BUTTON GROUPS ===== */
+.button-group,
+.focus-buttons {
   margin-top: 10px;
-  padding: 6px 12px;
-  border-radius: 6px;
-  background-color: rgba(56, 189, 248, 0.1);
+}
+/* ===== INTERACTIVE SECTIONS ===== */
+section:hover {
+  background: rgba(56, 189, 248, 0.03);
+  border-radius: 8px;
+  transition: background 0.2s ease;
+}
+#counterValue {
+  font-size: 2rem;
+  font-weight: bold;
+  margin: 10px 0;
+  color: #f8fafc;
+}
+/* ===== PROJECTS ===== */
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  margin-top: 20px;
 }
 
-a:hover {
-  background-color: rgba(56, 189, 248, 0.2);
+.project-card {
+  background: #020617;
+  border: 1px solid #1e293b;
+  border-radius: 10px;
+  padding: 20px;
+  transition: transform 0.2s ease, border-color 0.2s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-4px);
+  border-color: #38bdf8;
+}
+
+.project-card h3 {
+  margin-bottom: 8px;
+}
+
+.project-tech {
+  margin-top: 10px;
+  font-size: 0.85rem;
+  color: #94a3b8;
 }

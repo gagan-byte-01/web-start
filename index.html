@@ -1,49 +1,66 @@
 <!DOCTYPE html>
-<html>
-  <head>
-  <title>Web Development Portfolio</title>
-
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
-
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Web Development Portfolio</title>
   <link rel="stylesheet" href="style.css">
 </head>
 
-  
-
-   
-
-   <body>
+<body>
   <div class="container">
 
-    <h1>Web Development Portfolio</h1>
+    <!-- ===== HEADER ===== -->
+    <header class="main-header">
+      <h1>Welcome to My Portfolio</h1>
+      <p class="intro">
+        I’m on a journey to become a skilled web developer by learning step by step — 
+        starting from HTML, CSS, and JavaScript, and moving toward real-world projects.
+      </p>
+    </header>
 
-    <p>
-      I am learning web development with a focus on building clean, responsive,
-      and user-friendly websites using modern web technologies.
-    </p>
+    <hr>
 
-    <h2>What I Do</h2>
-    <ul>
-      <li>Create structured web pages using HTML</li>
-      <li>Design layouts and themes using CSS</li>
-      <li>Build responsive websites for desktop and mobile</li>
-    </ul>
+    <!-- ===== CURRENT FOCUS ===== -->
+    <section id="focus">
+      <h2>Current Focus</h2>
+      <p>
+        I am currently strengthening my fundamentals in <strong>HTML</strong>, 
+        <strong>CSS</strong>, layout design, and responsive web development 
+        before diving deeper into JavaScript and frameworks.
+      </p>
 
-    <h2>Current Focus</h2>
-    <p>
-      I am currently strengthening my fundamentals in HTML, CSS, layout design,
-      and responsive development before moving into JavaScript.
-    </p>
+      <div class="focus-buttons">
+        <button id="actionBtn">Click Me</button>
+        <p id="message">Click the button to see some magic ✨</p>
+      </div>
+    </section>
 
-    <h2>Goals</h2>
+    <hr>
 
-    <div class="goals">
+    <!-- ===== SIMPLE COUNTER ===== -->
+    <section id="counter">
+      <h2>Simple Counter</h2>
+      <p id="counterValue">0</p>
+      <div class="button-group">
+        <button id="increaseBtn">Increase</button>
+        <button id="decreaseBtn">Decrease</button>
+        <button id="resetBtn">Reset</button>
+      </div>
+    </section>
+
+    <hr>
+
+    <!-- ===== GOALS ===== -->
+    <section id="goals">
+      <h2>My Goals</h2>
+
       <div class="goal-box">
         <h3>Technical Growth</h3>
         <ul>
-          <li>Master core web technologies</li>
-          <li>Build real-world projects</li>
-          <li>Write clean and maintainable code</li>
+          <li>Master HTML, CSS, and JavaScript</li>
+          <li>Build real-world, functional websites</li>
+          <li>Write clean and efficient code</li>
         </ul>
       </div>
 
@@ -51,44 +68,62 @@
         <h3>Career Direction</h3>
         <ul>
           <li>Develop job-ready skills</li>
-          <li>Create a strong portfolio</li>
-          <li>Grow consistently in tech</li>
+          <li>Create a professional portfolio</li>
+          <li>Grow consistently in the tech field</li>
         </ul>
       </div>
+    </section>
+<hr>
+
+<section id="projects">
+  <h2>Projects</h2>
+
+  <div class="projects-grid">
+
+    <div class="project-card">
+      <h3>Portfolio Website</h3>
+      <p>
+        A personal portfolio built using HTML, CSS, and JavaScript to showcase
+        my learning journey and projects.
+      </p>
+      <p class="project-tech">HTML • CSS • JavaScript</p>
     </div>
 
-    <p>
-      <a href="about.html">About Me</a>
-    </p>
+    <div class="project-card">
+      <h3>Interactive Counter</h3>
+      <p>
+        A simple interactive counter demonstrating JavaScript logic,
+        DOM manipulation, and clean code practices.
+      </p>
+      <p class="project-tech">JavaScript • DOM</p>
+    </div>
+
+    <div class="project-card">
+      <h3>Coming Soon</h3>
+      <p>
+        More real-world projects will be added here as I continue learning
+        and building.
+      </p>
+      <p class="project-tech">In Progress</p>
+    </div>
 
   </div>
+</section>
+
+    <hr>
+
+    <!-- ===== FOOTER ===== -->
+    <footer class="main-footer">
+      <p>
+        <a href="about.html">About Me</a> | 
+        <a href="mailto:youremail@example.com">Contact</a>
+      </p>
+      <small>© 2026 My Web Portfolio. All Rights Reserved.</small>
+    </footer>
+
+  </div>
+
+  <!-- ===== SCRIPTS ===== -->
+  <script src="script.js"></script>
 </body>
-
-
-  
-
-<h2>My Goals</h2>
-
-<div class="goals">
-  <div class="goal-box">
-    <h3>Learning</h3>
-    <ul>
-      <li>HTML</li>
-      <li>CSS</li>
-      <li>JavaScript</li>
-    </ul>
-  </div>
-
-
- 
-<div class="goal-box">
-    <h3>Career</h3>
-    <ul>
-      <li>Build real projects</li>
-      <li>Become a web developer</li>
-      <li>Get paid for skills</li>
-    </ul>
-  </div>
-</div>
-
-<a href="">About Me</a>
+</html>
