@@ -1,20 +1,58 @@
-const button = document.getElementById("actionBtn");
 
-let clickCount = 0;
+console.log("SCRIPT LOADED");
 
-if (button) {
-  button.addEventListener("click", function () {
-    clickCount++;
+const actionBtn = document.getElementById("actionBtn");
+const message = document.getElementById("message");
 
-    if (clickCount === 1) {
-      console.log("Button clicked once");
-    } else if (clickCount === 2) {
-      console.log("Button clicked twice");
+let clicked = false;
+
+if (actionBtn && message) {
+  actionBtn.addEventListener("click", function () {
+    if (!clicked) {
+      message.textContent = "JavaScript changed this text!";
+      clicked = true;
     } else {
-      console.log("Button clicked many times");
+      message.textContent = "Click the button to see magic.";
+      clicked = false;
     }
   });
 }
 
 
 
+let count = 0;
+
+const counterValue = document.getElementById("counterValue");
+const increaseBtn = document.getElementById("increaseBtn");
+const decreaseBtn = document.getElementById("decreaseBtn");
+const resetBtn = document.getElementById("resetBtn");
+
+function updateCounter() {
+  counterValue.textContent = count;
+}
+
+function changeCount(value) {
+  count = count + value;
+
+  if (count < 0) {
+    count = 0;
+  }
+
+  updateCounter();
+}
+
+if (increaseBtn && decreaseBtn && resetBtn && counterValue) {
+
+  increaseBtn.addEventListener("click", function () {
+    changeCount(1);
+  });
+
+  decreaseBtn.addEventListener("click", function () {
+    changeCount(-1);
+  });
+
+  resetBtn.addEventListener("click", function () {
+    changeCount(-count);
+  });
+
+}
