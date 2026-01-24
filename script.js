@@ -9,7 +9,7 @@ let clicked = false;
 if (actionBtn && message) {
   actionBtn.addEventListener("click", function () {
     if (!clicked) {
-      message.textContent = "JavaScript changed this text!";
+      message.textContent = "Memento vivere.......";
       clicked = true;
     } else {
       message.textContent = "Click the button to see magic.";
